@@ -2,16 +2,134 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="shortcut icon" href="./src/assets/images/favicon.svg" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="./src/assets/images/favicon.svg"
+      type="image/x-icon"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/assets/styles/main.css" />
     <title>Vite App</title>
   </head>
   <body>
-    <h1 class="text-2xl">Hello world!</h1>
+    <section class="section container mx-auto p-5">
+      <div class="justify-center text-center  mb-20 mt-32 flex items-center">
+        <h1 class="section__title font-serif font-normal text-5xl">
+          We love meeting new people and helping them.
+        </h1>
+      </div>
 
-    <a href="./src/pages/blog.html" class="underline">Link to Blog page</a>
-
+      <div class="card flex flex-row gap-14 justify-center ">
+      <div
+          class="card__left flex bg-[#F4F0EC] flex-col w-[350px] py-20 px-8 rounded-3xl"
+        >
+          <div class="card__mail flex gap-4 text-center items-center">
+            <div class="rounded-full bg-white">
+              <img
+                class="web w-14 p-4"
+                src="./src/assets/images/mail.svg"
+                alt=""
+              />
+            </div>
+            <a
+              class="mail font-sans text-[#4D5053] text-xl font-normal"
+              href="info@yourdomain.com"
+              >info@yourdomain.com</a
+            >
+          </div>
+          <div class="card__phone flex mt-2 gap-4 text-center items-center">
+            <div class="rounded-full bg-white">
+              <img
+                class="web w-[52px] p-[15px]"
+                src="./src/assets/images/phone.svg"
+                alt=""
+              />
+            </div>
+            <a
+              class="phone text-[#4D5053] font-sans text-xl font-normal"
+              href="tell:+1 (378) 400-1234"
+              >+1 (378) 400-1234
+            </a>
+          </div>
+          <div class="card__web flex mt-2 gap-4 text-center items-center">
+            <div class="rounded-full bg-white">
+              <img
+                class="web w-[52px] p-[15px]"
+                src="./src/assets/images/web.svg"
+                alt=""
+              />
+            </div>
+            <a
+              class="web text-[#4D5053] font-sans text-xl font-normal"
+              href="https://yourdomain.com"
+              >www.yourdomain.com</a
+            >
+          </div>
+          <div class="card__social flex gap-9 text-center items-center mt-12">
+            <a href="#!"
+              ><img src="./src/assets/images/facebook.svg" alt=""
+            /></a>
+            <a href="#!"><img src="./src/assets/images/tw.svg" alt="" /></a>
+            <a href="#!"><img src="./src/assets/images/in.svg" alt="" /></a>
+            <a href="#!"><img src="./src/assets/images/insta.svg" alt="" /></a>
+          </div>
+        </div>
+        <form
+          class="card__right grid grid-rows-2 grid-flow-col w-[800px] gap-4"
+        >
+          <div class="relative z-0 w-full mb-5 group">
+            <input
+              type="text"
+              name="floating_first_name"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+              required
+            />
+            <label
+              for="floating_first_name"
+              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >First name</label
+            >
+          </div>
+          <div class="relative z-0 w-full mb-5 group">
+            <input
+              type="text"
+              pattern=""
+              name="Subject"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+              required
+            />
+            <label
+              for="Subject"
+              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >Subject</label
+            >
+          </div>
+          <div class="relative z-0 w-full mb-5 group">
+            <input type="email" name="email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+            <label for="email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
+        </div>
+          <div class="relative z-0 w-full mb-5 group">
+            <input
+            type="tel"
+            pattern=""
+            name="phone"
+            
+            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            placeholder=" "
+            required
+          />
+          <label
+            for="phone"
+            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+            >Phone</label
+          >
+          </div>
+        </form>
+      </div>
+      <div class="btn relative"><button class="bg-[#292F36] text-white px-8 py-4 rounded-lg absolute -top-20 right-60">Send Now</button></div>
+    </section>
     <script type="module" src="./src/js/main.js"></script>
   </body>
 </html>

@@ -2,15 +2,53 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="shortcut icon" href="./src/assets/images/favicon.svg" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="./src/assets/images/favicon.svg"
+      type="image/x-icon"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/assets/styles/main.css" />
-    <title>Vite App</title>
+    <title>task 1</title>
   </head>
   <body>
-    <h1 class="text-2xl">Hello world!</h1>
-
-    <a href="./src/pages/blog.html" class="underline">Link to Blog page</a>
+    <section class="p-16">
+      <div class="main  grid grid-cols-3 grid-rows-5 gap-4">
+        <div class="card w-72 row-span-3">
+          <h1 class="font-sans text-6xl font-medium mt-8">
+            Discover the beauty around the world
+          </h1>
+          <p class="font-normal text-lg font-sans text-gray-400 mt-10">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed
+            tenetur perspiciatis eius sunt ipsam odit eaque, consectetur quae
+            enim amet!
+          </p>
+          <button
+            class="cursor-pointer mt-8 py-2 px-5 font-normal bg-black text-white rounded-xl"
+          >
+            Get started
+          </button>
+        </div>
+        <div class="card row-span-2 col-start-3 row-start-1">
+          <img src="./src/assets/images/Image2.png" alt="" />
+        </div>
+        <div class="card row-span-2 col-start-2 row-start-2">
+          <img src="./src/assets/images/Image1.png" alt="" />
+        </div>
+        <div class="card row-span-2 row-start-4">
+          <h3 class="font-sans text-4xl font-medium mt-8 text-gray-300 mb-4">01</h3>
+          <img src="./src/assets/images/Image3.png" alt="" />
+        </div>
+        <div class="card row-span-2 row-start-4">
+          <h3 class="font-sans text-4xl font-medium mt-8 text-gray-300 mb-4">02</h3>
+          <img src="./src/assets/images/Image4.png" alt="" />
+        </div>
+        <div class="card row-span-2 row-start-4">
+          <h3 class="font-sans text-4xl font-medium mt-8 text-gray-300 mb-4">03</h3>
+          <img src="./src/assets/images/Image5.png" alt="" />
+        </div>
+      </div>
+    </section>
 
     <script type="module" src="./src/js/main.js"></script>
   </body>
